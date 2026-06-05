@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-05T00:00:00Z",
+  "title": "Design System: Low Ticket Sales Page",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Authority Blue",
+        "canonical": "#0B7FE8"
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "canonical": "#123A6D"
+      },
+      "primary-deeper": {
+        "role": "primary",
+        "displayName": "Darker Navy",
+        "canonical": "#082F63"
+      },
+      "cta-green": {
+        "role": "action",
+        "displayName": "Action Green",
+        "canonical": "#00A85A"
+      },
+      "urgency-red": {
+        "role": "urgency",
+        "displayName": "Urgency Red",
+        "canonical": "#DC2626"
+      },
+      "accent-coral": {
+        "role": "accent",
+        "displayName": "Coral Accent",
+        "canonical": "#FF8A5B"
+      },
+      "yellow": {
+        "role": "accent",
+        "displayName": "Gold Accent",
+        "canonical": "#FFD166"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headlines, section headings, high-impact statements."
+      },
+      "hero": {
+        "displayName": "Hero",
+        "purpose": "Main headline, maximum impact sections."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs, descriptions, readable content."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Pills, badges, small uppercase indicators."
+      }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 14px 34px rgba(11,127,232,0.07)", "purpose": "Standard card elevation." },
+      { "name": "button", "value": "0 14px 34px rgba(0,168,90,0.28)", "purpose": "CTA button depth." },
+      { "name": "urgency", "value": "0 14px 34px rgba(220,38,38,0.25)", "purpose": "Urgency element shadow." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default transitions." },
+      { "name": "duration-fast", "value": "0.15s", "purpose": "Quick micro-interactions." },
+      { "name": "duration-normal", "value": "0.3s", "purpose": "Standard transitions." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "400px" },
+      { "name": "md", "value": "480px" },
+      { "name": "lg", "value": "640px" },
+      { "name": "xl", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Shiny CTA Button",
+      "kind": "button",
+      "refersTo": "cta-primary",
+      "description": "Primary CTA with animated conic gradient border and green gradient background.",
+      "html": "<a class=\"ds-shiny-cta\">QUERO ACESSAR AGORA</a>",
+      "css": ".ds-shiny-cta { border-radius: 9999px; padding: 18px 22px; background: linear-gradient(135deg, #22C978, #00A85A); color: #FFFFFF; font-family: Nunito, system-ui, sans-serif; font-weight: 900; font-size: 15.5px; text-transform: uppercase; box-shadow: 0 14px 34px rgba(0,168,90,0.28); border: none; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.15s ease, box-shadow 0.15s ease; } .ds-shiny-cta:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 18px 42px rgba(0,168,90,0.34); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Standard card with white background and ambient blue shadow.",
+      "html": "<div class=\"ds-card\"><h3>Title</h3><p>Description</p></div>",
+      "css": ".ds-card { background: #FFFFFF; border-radius: 24px; padding: 22px; border: 1px solid rgba(11,127,232,0.12); box-shadow: 0 14px 34px rgba(11,127,232,0.07); }"
+    },
+    {
+      "name": "Pill Badge",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Small rounded badge for labels and categories.",
+      "html": "<span class=\"ds-pill\">LABEL</span>",
+      "css": ".ds-pill { display: inline-block; padding: 8px 16px; background: #EAF5FF; color: #0B7FE8; border-radius: 999px; font-size: 10.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Urgent Closer",
+    "overview": "Bold, aggressive sales page converting visitors through urgency, social proof, and direct CTAs.",
+    "keyCharacteristics": [
+      "Aggressive urgency through timers and scarcity",
+      "Mobile-first for Brazilian smartphone users",
+      "Bold blue/green/red color contrasts",
+      "Pill-shaped buttons with gradients"
+    ],
+    "rules": [
+      { "name": "The Urgency Rule", "body": "Red is reserved for time-sensitive elements only.", "section": "colors" },
+      { "name": "The Green Means Go Rule", "body": "Green is exclusively for CTAs and success states.", "section": "colors" }
+    ],
+    "dos": ["Use urgency tactics", "Mobile-first design", "Bold color contrasts", "Pill-shaped CTAs"],
+    "donts": ["Generic SaaS templates", "AI slop aesthetics", "Corporate style", "All-caps body copy"]
+  }
+}
